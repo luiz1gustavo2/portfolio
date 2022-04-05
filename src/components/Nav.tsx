@@ -19,10 +19,10 @@ function Nav() {
   </div> 
   <div className="hidden px-2 mx-2 navbar-center lg:flex">
     <div className="flex items-stretch">
-      <a className="btn btn-ghost btn-md rounded-btn text-black">
+      <a className="btn btn-ghost btn-md mr-2 rounded-btn text-black"> {/* Criar NavLink component */}
               Home
             </a> 
-      <a className="btn btn-ghost btn-md rounded-btn text-black">
+      <a className="btn btn-ghost btn-md mr-2 rounded-btn text-black">
               Portfolio
             </a> 
       <a className="btn btn-ghost btn-md rounded-btn text-black">

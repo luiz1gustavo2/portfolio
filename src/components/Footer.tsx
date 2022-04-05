@@ -14,7 +14,7 @@ function Footer() {
         animate="visible">
             <div className="text-gray-700 text-center p-4 bg-sky-100" >
                 © Feito com muito carinho por: 
-                <a className="text-gray-800" href="www.linkedin.com/in/luiz1gustavo2"> Luiz Gustavo</a>
+                <a className="text-gray-800" target="_blank" href="https://linkedin.com/in/luiz1gustavo2">Luiz Gustavo</a>
             </div>
         </motion.footer>
     );
