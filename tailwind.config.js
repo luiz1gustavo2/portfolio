@@ -5,15 +5,21 @@ module.exports = {
       {
         'theme': {  
 
-          'dark':             '#282c34',
-          'neutral':          '#3d4451',
+          'dark':             '#171717',
+          'neutral-blue':     '#0F172A',
+          'neutral':          '#374151',
           'light':            '#ffffff',
 
-          'light-blue':       '#0891b2',
-          'blue':             '#0284c7',
-          'dark-blue':        '#2563eb',
+          'blue-100':         '#E0F2FE',
+          'blue-300':         '#38BDF8',
+          'blue-500':         '#0EA5E9',
+          'blue-700':         '#0369A1',
+          'blue-800':         '#075985',
+          'blue-900':         '#0C4A6E',
 
-          'primary' :         '#4C85FC',       
+
+
+          'primary' :         '#0284C7',       
           'primary-focus' :   '#395A8A',     
           'primary-content' : '#ffffff',   
 
