@@ -1,0 +1,36 @@
+.aboutme-description{
+    width: 100%;
+    max-width: 50rem;
+    margin-bottom: 3rem;
+}
+strong{
+    color: var(--green-strong);
+}
+
+.tech-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--secondary-light);
+    border-radius: 10px;
+    width: 6rem;
+}
+
+.tech-icon:hover {
+    background: var(--secondary-light-transparent);
+    animation: ease-in-out;
+    color: var(--neutral-dark);
+    font-weight: 500;
+}
+
+.tech-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2:hover {
+    color: var(--secondary-light);
+}

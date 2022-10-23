@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neutral-dark:#0F172A;
+  --primary-light:#E0F2FE;
+  --primary:#0EA5E9;
+  --primary-medium: #0C4A6E;
+  --primary-dark:#0a091a;
+  --primary-transparent:rgba(10, 9, 26,.35);
+  --secondary:#b6bff3;
+  --secondary-light:rgb(198, 204, 240);
+  --secondary-light-transparent:rgba(198, 204, 240, 0.418);
+  --green-strong:#05F2DB;
+  --green-strong-transparent:rgb(5, 242, 219,0.2);
+  --blue:#282f99;
+  --blue-transparent:rgba(40, 47, 153,.5);
+  --white: #fff;
+  --black: #000;
+  --gold: #FFD700;
+  --icon:var(--gold);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,*::after,*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  transition: .3s ease-in-out;
+}
+
+body {
+  background: linear-gradient( var(--primary-dark), var(--neutral-dark), var(--primary-medium) );
+  color: var(--white);
+  font-weight: 300;
+  position: relative;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+h2 {
+  color: transparent;
+  -webkit-text-stroke: 0.1rem var(--secondary-light);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-shadow: 0px 1px 20px var(--secondary-light);
+}
+
+h3 {
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+section {
+  margin: 40px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (min-width:30rem) {
+    h1{
+      font-size: 6rem;
+    }
+    h2{
+      font-size: 4rem;
+    }
+    p{
+      font-size: 1.3rem;
+    }
+    section{
+      padding: 8rem 0;
+    }
+}
