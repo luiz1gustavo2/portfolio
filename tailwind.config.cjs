@@ -22,7 +22,8 @@ module.exports = {
           'primary-content' : '#ffffff',   
 
           'accent' :          '#37cdbe',            
-          'accent-focus' :    '#2aa79b',      
+          'accent-focus' :    '#2aa79b',
+          'green-strong' :    '#05F2DB',      
           'accent-content' :  '#ffffff',
           'gold-700' :        '#FFD700', 
         },

@@ -19,7 +19,7 @@ function Contact() {
                     style={styleDes}
                 >
                     <h3 className="user">@luiz1gustavo2</h3>
-                    <p>Feel free to leave a message in any of my socials.</p>
+                    <p>Caso tenha alguma prosposta, uma dica ou sugestão, entre em contato comigo.</p>
                 </div>
                 <div className="contact-icons">
                     <a href="https://github.com/luiz1gustavo2" target="_blank" rel="noreferrer">
@@ -39,7 +39,7 @@ function Contact() {
                             <path fill="var(--icon)" d="M256,0C114.615,0,0,114.615,0,256S114.615,512,256,512,512,397.385,512,256,397.385,0,256,0ZM389.333,312.5A76.836,76.836,0,0,1,312.5,389.333H199.5A76.837,76.837,0,0,1,122.666,312.5V199.5A76.836,76.836,0,0,1,199.5,122.667H312.5A76.836,76.836,0,0,1,389.333,199.5Z"/>
                         </svg>
                     </a>
-                    <a href="mailto:luiz1gustavo2@hotmail.com?Subject=Hi!%20I%20Saw%20your%20portfolio!" target="_blank" rel="noreferrer">
+                    <a href="mailto:luiz1gustavo2@hotmail.com?Subject=Olá!%20eu%20vi%20seu%20portfólio!" target="_blank" rel="noreferrer">
                         <svg className="icon-contact" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill="var(--icon)" fillRule="evenodd" clipRule="evenodd" d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM23.9639 26.0193L14.9987 19.5115V33.23H13.5009C12.6664 33.23 12.0031 32.5667 12.0031 31.7322V16.562C12.0031 16.4985 12.007 16.4389 12.0144 16.3831C12.0416 16.1451 12.1284 15.9122 12.2813 15.7061C12.7734 15.0428 13.7363 14.893 14.421 15.3851L23.9853 22.3391L33.6138 15.2996C34.2771 14.8074 35.2186 14.9572 35.7107 15.6419C35.9723 15.9945 36.0525 16.4256 35.9674 16.8261V31.7536C35.9674 32.5667 35.3041 33.23 34.4697 33.23H32.9719V19.4788L23.9639 26.0193Z" />
                         </svg>

@@ -2,6 +2,10 @@ import Section from "../components/Section";
 import "../styles/AboutMe.css";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import * as HoverCard from '@radix-ui/react-hover-card';
+import FrontendTech from "../components/Skills/FrontendTech";
+import BackendTech from "../components/Skills/BackendTech";
+import DevOps from "../components/Skills/DevOps";
 
 function AboutMe() {
     const ref = useRef(null);
@@ -12,110 +16,67 @@ function AboutMe() {
         transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
     };
 
-    const technologiesItems = {
-        html5: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />,
-            tech: "HTML5"
-        },
-
-        css3: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />,
-            tech: "CSS3"
-        },
-
-        javascript: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />,
-            tech: "Javascript"
-        },
-
-        git: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />,
-            tech: "Git"
-        },
-
-        react: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
-            tech: "React"
-        },
-
-        typescript: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />,
-            tech: "Typescript"
-        },
-
-        nodejs: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />,
-            tech: "NodeJs"
-        },
-
-        java: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />,
-            tech: "Java"
-        },
-
-        php: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />,
-            tech: "php"
-        },
-
-        mysql: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />,
-            tech: "mysql"
-        },
-        
-        tailwind: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />,
-            tech: "tailwind"
-        },
-        
-        docker: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />,
-            tech: "Docker"
-        },
-
-        linux: {
-            img: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />,
-            tech: "Linux"
-        }
-        
-    };
-
     return (
         <Section id="about-me">
-            <div ref={ref}
-                style={styleDes}>
-                <h2>Sobre mim</h2>
+            <div ref={ref} style={styleDes}>
+                <h2>Sobre Mim</h2>
 
                 <p className="aboutme-description">
-                    I am a <strong>software engineering student</strong> at the
-                    technological university of Peru. I am also a self-taught person.
-                    Developing programs related to <strong>frontend</strong> and <strong>backend</strong> development is one of my greatest passions.
+                    Eu sou um <strong>Desenvolvedor Fullstack</strong> formado em Análise e Desenvolvimento de Sistemas
+                    na Faculdade Projeção. Eu busco uma oportunidade de começar no mercado de Desenvolvimento,
+                    eu desenvolvo aplicações tanto <strong>frontend</strong> quanto <strong>backend</strong>, possuo uma vontade imensa de começar a trabalhar,
+                    sou uma pessoa dedicada e só preciso de uma chance para mostrar todo meu potencial.
+
+                </p>
+
+                <p className="aboutme-description">
+                    Eu vivo a tecnologia, sou um Desenvolvedor esforçado que busca sempre aprender mais, afinal sempre temos
+                    algo novo a aprender. Eu tento não me prender a linguagens e frameworks, eu uso o que for necessário para
+                    resolver o problema abordado pelo projeto. Estou buscando me tornar um desenvolvedor mais completo para entender
+                    o funcionamento do projeto de ponta a ponta, desde o escopo até a implantação, estudando a cultura <strong>DevOps</strong>,
+                    além de <span><HoverCard.Root openDelay={0}>
+                        <HoverCard.Trigger className="p-1 bg-[#0F172A] text-[#05F2DB] border-2 border-white font-bold rounded-sm">Hard Skills</HoverCard.Trigger>
+                        <HoverCard.Portal>
+                            <HoverCard.Content className="bg-[#0F172A] text-[#05F2DB] p-4 border-2 border-white font-medium rounded">
+                                <ul>
+                                    <li>Design Patterns</li>
+                                    <li>Solid</li>
+                                    <li>Clean Architecture</li>
+                                    <li>Clean Code</li>
+                                    <li>DDD</li>
+                                    <li>Cloud Computing</li>
+                                </ul>
+                            </HoverCard.Content>
+                        </HoverCard.Portal>
+                    </HoverCard.Root></span> essenciais.
+
+
+
+
+
                 </p>
                 <p className="aboutme-description">
-                    I am very passionate about creating things related to technology and art.
-                    I enjoy learning from platforms that help me improve my skills, such as FreeCodeCamp, Academia X, and TheOdinProject.
+                    Eu aprendo e me desenvolvo estudando diariamente pela plataforma Alura, Rocketseat, Dio.me e participando
+                    frequentemente dos bootcamps oferecidos por essas plataformas.
                 </p>
-                <h2>Soft Skills</h2>
-                <ul><li>teste</li></ul>
 
-                <h2>Minhas Habilidades</h2>
-                <div className="tech-list">
-                    {Object.keys(technologiesItems).map((tech, i) => (
-                        <div
-                            className="tech-icon"
-                            key={technologiesItems[tech]["tech"]}
-                            ref={ref}
-                            style={{
-                                transform: isInView ? "none" : "translateY(100px)",
-                                opacity: isInView ? 1 : 0,
-                                transition: `all .7s cubic-bezier(0.17, 0.55, 0.55, 1) ${i + 2}00ms`
-                            }}
-                        >
-                            {technologiesItems[tech]["img"]}
-                            {technologiesItems[tech]["tech"]}
-                        </div>
-                    ))}
+                <h2>Skills</h2>
+                <div className="mb-20">
+                    <FrontendTech />
+                    <BackendTech />
+                    <DevOps />
                 </div>
+
+                <h3 className="text-5xl font-bold text-zinc-300">Soft Skills</h3>
+                <ul className="ml-10">
+                    <li>- Liderança</li>
+                    <li>- Comunicativo</li>
+                    <li>- Resolução de Problemas</li>
+                    <li>- Proativo</li>
+                    <li>- Adaptável</li>
+                    <li>- Trabalho em Equipe</li>
+                </ul>
+
             </div>
         </Section>
     );
