@@ -36,11 +36,13 @@ export default function Introduction() {
 
   return (
     <header className="header" id="intro">
-      <div className="title">
-        <h1 ref={nome} className="text-sky-100"></h1>
-      </div>
-      <div className="title-neon">
-        <h1 ref={profissao} className="transition ease-in-out hover:text-yellow-300 duration-1000 "></h1>
+      <div className="grid grid-cols-1 grid-rows-2 ">
+        <div className="title">
+          <h1 ref={nome} className="text-sky-100"></h1>
+        </div>
+        <div className="title-neon">
+          <h1 ref={profissao} className="transition ease-in-out hover:text-yellow-300 duration-1000 "></h1>
+        </div>
       </div>
       <div className="intro-description">
         <p>Sou um Desenvolvedor Fullstack, formado em Análise e Desenvolvimento de Sistemas, disciplinado e  dedicado.</p>

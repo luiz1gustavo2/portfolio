@@ -37,23 +37,22 @@ html {
 body {
   background: linear-gradient( var(--primary-dark), var(--neutral-dark), var(--primary-medium) );
   color: var(--white);
-  font-weight: 300;
   position: relative;
-  margin: 0 auto;
+  margin: 0;
 }
 
 h1 {
   color: var(--primary);
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 10vw;
 }
 
 h2 {
-  color: transparent;
-  -webkit-text-stroke: 0.1rem var(--secondary-light);
-  font-size: 3rem;
-  font-weight: bold;
   margin-top: 2rem;
+  color: transparent;
+  font-size: 8vw;
+  font-weight: bold;
+  -webkit-text-stroke: 0.1rem var(--secondary-light);
   text-shadow: 0px 1px 20px var(--secondary-light);
 }
 
@@ -62,11 +61,11 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 4vw;
 }
 
 section {
-  margin: 40px;
+  margin: 10%;
 }
 
 img {
@@ -74,7 +73,7 @@ img {
   height: 40px;
 }
 
-@media only screen and (min-width:30rem) {
+@media only screen and (min-width:480px) {
     h1{
       font-size: 6rem;
     }
@@ -85,6 +84,6 @@ img {
       font-size: 1.3rem;
     }
     section{
-      padding: 8rem 0;
+      padding: 8rem 3rem;
     }
 }

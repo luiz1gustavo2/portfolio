@@ -12,10 +12,10 @@ function Nav({classNav, onLinkClick}) {
       transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
     };
   const navItems = [
-      "#intro",
-      "#about-me",
-      "#my-projects",
-      "#contact",
+      "#Introduction",
+      "#AboutMe",
+      "#MyProjects",
+      "#Contact",
   ];    
   return ( 
       <nav 

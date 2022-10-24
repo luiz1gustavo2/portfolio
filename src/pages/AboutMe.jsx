@@ -26,7 +26,6 @@ function AboutMe() {
                     na Faculdade Projeção. Eu busco uma oportunidade de começar no mercado de Desenvolvimento,
                     eu desenvolvo aplicações tanto <strong>frontend</strong> quanto <strong>backend</strong>, possuo uma vontade imensa de começar a trabalhar,
                     sou uma pessoa dedicada e só preciso de uma chance para mostrar todo meu potencial.
-
                 </p>
 
                 <p className="aboutme-description">
@@ -39,6 +38,7 @@ function AboutMe() {
                         <HoverCard.Portal>
                             <HoverCard.Content className="bg-[#0F172A] text-[#05F2DB] p-4 border-2 border-white font-medium rounded">
                                 <ul>
+                                    <li>Orientação ao Objeto</li>
                                     <li>Design Patterns</li>
                                     <li>Solid</li>
                                     <li>Clean Architecture</li>
@@ -50,13 +50,9 @@ function AboutMe() {
                         </HoverCard.Portal>
                     </HoverCard.Root></span> essenciais.
 
-
-
-
-
                 </p>
                 <p className="aboutme-description">
-                    Eu aprendo e me desenvolvo estudando diariamente pela plataforma Alura, Rocketseat, Dio.me e participando
+                    Eu aprendo e me desenvolvo estudando diariamente pela plataforma Alura, Rocketseat, Dio.me, FreeCodeCamp e participando
                     frequentemente dos bootcamps oferecidos por essas plataformas.
                 </p>
 
@@ -67,14 +63,25 @@ function AboutMe() {
                     <DevOps />
                 </div>
 
-                <h3 className="text-5xl font-bold text-zinc-300">Soft Skills</h3>
-                <ul className="ml-10">
+                <h3 className="text-2xl md:text-5xl font-bold text-zinc-300">Soft Skills</h3>
+                <ul className="ml-6 mb-8">
                     <li>- Liderança</li>
                     <li>- Comunicativo</li>
                     <li>- Resolução de Problemas</li>
                     <li>- Proativo</li>
                     <li>- Adaptável</li>
                     <li>- Trabalho em Equipe</li>
+                </ul>
+
+                <h3 className="text-2xl md:text-5xl font-bold text-zinc-300">English</h3>
+                <p>I studied English at a public language school in my city, I studied there 
+                    for 6 years and I learn a lot, I try to practice daily to always improve
+                    my level, my English level is advanced.</p>
+                    <ul className="ml-6 mt-2 mb-2">
+                    <li>- Reading (Advanced)</li>
+                    <li>- Writing (Advanced)</li>
+                    <li>- Speech (Intermediary)</li>
+                    <li>- Listening (Advanced)</li>
                 </ul>
 
             </div>

@@ -3,12 +3,11 @@
   flex-direction: column;
   justify-content: center;
   height: 70vh;
-  margin-left: 50px;
+  padding: 10%;
 }
 
 .intro-description {
-  width: 100%;
-  max-width: 70rem;
+  max-width: 100%;
   margin-top: 40px;
 }
 
@@ -35,15 +34,15 @@
 
 .title {
   display: flex;
-  align-items: center;
-  height: 6rem;
-  font-weight: bold
+  align-items:center;
+  height: 10vw;
+  font-weight: bold;
 }
 
 .title-neon {
   display: flex;
-  align-items: center;
-  height: 6rem;
+  align-items:center;
+  height: 20vw;
   text-shadow: 0px 1px 20px var(--primary);
   font-weight: bolder;
 }
@@ -56,22 +55,20 @@
 
 .typed-cursor {
   color: var(--gold);
-  font-size: 4rem;
-  margin-bottom: 1.4rem;
+  font-size: 6vw;
+  margin-bottom: 2vw;
 }
 
-@media only screen and (min-width:30rem) {
-  .title{
-      height: 10rem;
+@media only screen and (min-width:480px) {
+  .title {
+    height: 10vw;
   }
-  .typed-cursor{
-      font-size: 5.5rem;
-      margin-bottom: 1.5rem;
+
+  .title-neon {
+    height: 10vw;
   }
-  
 }
-@media only screen and (min-width:75rem) {
-  /* .hamburguer{
-      display: none;
-  } */
+
+@media only screen and (min-width:1200px) {
+ 
 }
